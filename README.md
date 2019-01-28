@@ -1,6 +1,9 @@
 # MangaIndoPDFGenerator
 Hanya Berkarya ...
 
+## Fitur
+* Save Images
+* Generate Pdf
 
 ## How To Use :
 ```
