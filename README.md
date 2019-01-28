@@ -15,8 +15,8 @@ $ python3 mainindo.py
 
 ## Note :
 For termux user , you need install wget .
-'''
+```
 pkg install wget
-'''
+```
 
 ### Thanks You
