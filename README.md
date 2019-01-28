@@ -13,4 +13,10 @@ $ pip install -r requirements.txt
 $ python3 mainindo.py
 ```
 
-## Thanks You
+## Note :
+For termux user , you need install wget .
+'''
+pkg install wget
+'''
+
+### Thanks You
