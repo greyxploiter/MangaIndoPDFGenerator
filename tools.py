@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup as bs
 from fpdf import FPDF
 import urllib.request
 from glob import glob
+import shutil
 
 # Created by Defri Indra M
 # 
@@ -63,7 +64,12 @@ def createPdf(dir__):
 	pdf.output(dir_+".pdf")
 	print(f"\n{Fore.GREEN}[+] Success to created {dir_}.pdf ...{Style.RESET_ALL}")
 
-
+def deleteDir(dir_):
+	print(f"\n{Fore.BLUE}[-] Prepare to remove {dir_} ...{Style.RESET_ALL}")
+	# dir__ = "\""+dir_+"\""
+	if os.path.exists(dir_):
+		shutil.rmtree(dir_)
+		print(f"{Fore.GREEN}\n[+] Completed Removing {dir_} ...{Style.RESET_ALL}")
 def main():
 	link = input(f"{Fore.RED}Link Manga Indo {Style.RESET_ALL} : ")
 	bsoup = req(link)
@@ -72,3 +78,6 @@ def main():
 	createDir(title)
 	downloadImage(linkImage,title)
 	createPdf(title)
+	saveImageQ = input(f"\n{Fore.YELLOW}[?] Save images (y/n) ?? ")
+	if not saveImageQ == "y" or saveImageQ == "Y" :
+		deleteDir(title)
