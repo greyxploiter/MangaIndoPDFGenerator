@@ -1,7 +1,9 @@
 # MangaIndoPDFGenerator
+
 Hanya Berkarya ...
 
-## Fitur
+
+## Features :
 * Save Images
 * Generate Pdf
 * mass download manga
