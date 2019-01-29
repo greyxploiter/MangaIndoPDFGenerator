@@ -4,6 +4,7 @@ Hanya Berkarya ...
 ## Fitur
 * Save Images
 * Generate Pdf
+* mass download manga
 
 ## How To Use :
 ```
